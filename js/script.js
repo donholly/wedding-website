@@ -149,7 +149,7 @@ $(document).ready(function() {
 	// 01.9 Check Safari/Chrome Mac
 	//----------------------------------------------------------------------------------
 	var isSafari = function isSafari() {
-	 	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
+	 	if (navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1) {
    		 	return 1;
 		}
 	}
@@ -336,7 +336,7 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2017, 3, 25);
+	theday = new Date(2017, 2, 25);
 	$('#countdown').countdown({until: theday, format: 'WDHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']);
 
