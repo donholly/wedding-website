@@ -19,9 +19,11 @@ function initialize() {
 		center: new google.maps.LatLng(37.7899456,-122.3964783),
 		panControl: true,
 		zoomControl: true,
+		scrollwheel: false,
 		mapTypeControl: false,
 		streetViewControl: false,
-		overviewMapControl: false
+		overviewMapControl: false,
+		scaleControl: true
 	};
 
 	var showerMapOptions = {
@@ -30,9 +32,11 @@ function initialize() {
 		center: new google.maps.LatLng(41.46444,-82.19018009999999),
 		panControl: true,
 		zoomControl: true,
+		scrollwheel: false,
 		mapTypeControl: false,
 		streetViewControl: false,
-		overviewMapControl: false
+		overviewMapControl: false,
+		scaleControl: true
 	};
 
 	//CREATE NEW MAP
