@@ -47,16 +47,16 @@ function initialize() {
 	//ADD NEW MARKER WITH LABEL
 	//=======================================================================================
 
-	var ceremonyMarker = new MarkerWithLabel({
-		position: new google.maps.LatLng(37.791443,-122.389913),
-		draggable: false,
-		raiseOnDrag: false,
-		icon: ' ',
-		map: weddingMap,
-		labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-		labelAnchor: new google.maps.Point(29, 20),
-		labelClass: "labels" // the CSS class for the label
-	});
+	// var ceremonyMarker = new MarkerWithLabel({
+	// 	position: new google.maps.LatLng(37.791443,-122.389913),
+	// 	draggable: false,
+	// 	raiseOnDrag: false,
+	// 	icon: ' ',
+	// 	map: weddingMap,
+	// 	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+	// 	labelAnchor: new google.maps.Point(29, 20),
+	// 	labelClass: "labels" // the CSS class for the label
+	// });
 
 	var minnaGalleryMarker = new MarkerWithLabel({
 		position: new google.maps.LatLng(37.787306,-122.399371),
@@ -155,15 +155,15 @@ function initialize() {
 
 	// Wedding
 
-	var ceremonyInfoWindow = new google.maps.InfoWindow({
-		content: "<div>Ceremony<br />Rincon Park</div>"
-	});
-
-	google.maps.event.addListener(ceremonyMarker, 'click', function() {
-		ceremonyInfoWindow.open(showerMap, ceremonyMarker);
-	});
-
-	ceremonyInfoWindow.open(weddingMap, ceremonyMarker);
+	// var ceremonyInfoWindow = new google.maps.InfoWindow({
+	// 	content: "<div>Ceremony<br />Rincon Park</div>"
+	// });
+	//
+	// google.maps.event.addListener(ceremonyMarker, 'click', function() {
+	// 	ceremonyInfoWindow.open(showerMap, ceremonyMarker);
+	// });
+	//
+	// ceremonyInfoWindow.open(weddingMap, ceremonyMarker);
 
 
 	var minnaInfoWindow = new google.maps.InfoWindow({
