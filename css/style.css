@@ -533,7 +533,7 @@ img.with-border{
 }
 
 .split-margin{
-	margin-left:80px;
+	margin-left:70px;
 }
 
 /* ----------------------------------------------*/
@@ -2897,7 +2897,7 @@ h2#dont-miss-it-title{
 /* 14.8 Groomsmen Section						 */
 /* ----------------------------------------------*/
 #groomsmen-section{
-	padding: 80px 0
+	padding: 0;
 }
 
 .groomsmen-item{
@@ -2908,7 +2908,7 @@ h2#dont-miss-it-title{
 /* 14.9 Bridesmaid Section						 */
 /* ----------------------------------------------*/
 #bridesmaid-section{
-	padding: 80px 0
+	padding: 0;
 }
 
 .bridesmaid-item{
