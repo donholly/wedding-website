@@ -69,6 +69,17 @@ function initialize() {
 		labelClass: "labels" // the CSS class for the label
 	});
 
+	var hotelMarker = new MarkerWithLabel({
+		position: new google.maps.LatLng(37.7870494,-122.4128867),
+		draggable: false,
+		raiseOnDrag: false,
+		icon: ' ',
+		map: weddingMap,
+		labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #0d9a48"><i class="de-icon-home-1" style="color:#0d9a48"></i></div>',
+		labelAnchor: new google.maps.Point(29, 20),
+		labelClass: "labels" // the CSS class for the label
+	});
+
 	var carissaHomeMarker = new MarkerWithLabel({
 		position: new google.maps.LatLng(41.46444,-82.19018009999999),
 		draggable: false,
@@ -165,7 +176,7 @@ function initialize() {
 	//
 	// ceremonyInfoWindow.open(weddingMap, ceremonyMarker);
 
-
+	// Minna
 	var minnaInfoWindow = new google.maps.InfoWindow({
 		content: "<div>Cocktail Hour &amp; Reception<br />Minna Gallery</div>"
 	});
@@ -176,6 +187,16 @@ function initialize() {
 
 	minnaInfoWindow.open(weddingMap, minnaGalleryMarker);
 
+	// Hotel
+	var hotelInfoWindow = new google.maps.InfoWindow({
+		content: "<div>Hotel Adagio<br />(block of rooms reserved)</div>"
+	});
+
+	google.maps.event.addListener(hotelMarker, 'click', function() {
+		hotelInfoWindow.open(weddingMap, hotelMarker);
+	});
+
+	hotelInfoWindow.open(weddingMap, hotelMarker);
 
 	// Shower
 
