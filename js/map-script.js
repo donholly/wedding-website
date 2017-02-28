@@ -26,23 +26,23 @@ function initialize() {
 		scaleControl: true
 	};
 
-	var showerMapOptions = {
-		zoom: 18,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		center: new google.maps.LatLng(41.46444,-82.19018009999999),
-		panControl: true,
-		zoomControl: true,
-		scrollwheel: false,
-		mapTypeControl: false,
-		streetViewControl: false,
-		overviewMapControl: false,
-		scaleControl: true
-	};
+	// var showerMapOptions = {
+	// 	zoom: 18,
+	// 	mapTypeId: google.maps.MapTypeId.ROADMAP,
+	// 	center: new google.maps.LatLng(41.46444,-82.19018009999999),
+	// 	panControl: true,
+	// 	zoomControl: true,
+	// 	scrollwheel: false,
+	// 	mapTypeControl: false,
+	// 	streetViewControl: false,
+	// 	overviewMapControl: false,
+	// 	scaleControl: true
+	// };
 
 	//CREATE NEW MAP
 	//=======================================================================================
 	var weddingMap = new google.maps.Map(document.getElementById('map-canvas-wedding'), weddingMapOptions);
-	var showerMap = new google.maps.Map(document.getElementById('map-canvas-shower'), showerMapOptions);
+	// var showerMap = new google.maps.Map(document.getElementById('map-canvas-shower'), showerMapOptions);
 
 	//ADD NEW MARKER WITH LABEL
 	//=======================================================================================
@@ -80,16 +80,16 @@ function initialize() {
 		labelClass: "labels" // the CSS class for the label
 	});
 
-	var carissaHomeMarker = new MarkerWithLabel({
-		position: new google.maps.LatLng(41.46444,-82.19018009999999),
-		draggable: false,
-		raiseOnDrag: false,
-		icon: ' ',
-		map: showerMap,
-		labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
-		labelAnchor: new google.maps.Point(29, 20),
-		labelClass: "labels" // the CSS class for the label
-	});
+	// var carissaHomeMarker = new MarkerWithLabel({
+	// 	position: new google.maps.LatLng(41.46444,-82.19018009999999),
+	// 	draggable: false,
+	// 	raiseOnDrag: false,
+	// 	icon: ' ',
+	// 	map: showerMap,
+	// 	labelContent: '<div class="de-icon circle medium-size" style="background-color:#FFF; border:1px solid #f0394d"><i class="de-icon-heart" style="color:#f0394d"></i></div>',
+	// 	labelAnchor: new google.maps.Point(29, 20),
+	// 	labelClass: "labels" // the CSS class for the label
+	// });
 
 
 	//
@@ -200,15 +200,15 @@ function initialize() {
 
 	// Shower
 
-	var carissaHomeInfoWindow = new google.maps.InfoWindow({
-		content: "<div>Wedding Shower<br />Carissa's Childhood Home</div>"
-	});
+	// var carissaHomeInfoWindow = new google.maps.InfoWindow({
+	// 	content: "<div>Wedding Shower<br />Carissa's Childhood Home</div>"
+	// });
 
-	google.maps.event.addListener(carissaHomeMarker, 'click', function() {
-		carissaHomeInfoWindow.open(showerMap, carissaHomeMarker);
-	});
+	// google.maps.event.addListener(carissaHomeMarker, 'click', function() {
+	// 	carissaHomeInfoWindow.open(showerMap, carissaHomeMarker);
+	// });
 
-	carissaHomeInfoWindow.open(showerMap, carissaHomeMarker);
+	// carissaHomeInfoWindow.open(showerMap, carissaHomeMarker);
 
 
 
